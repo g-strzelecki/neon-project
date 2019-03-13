@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+ul {
+    margin: auto;
+}
+
+li {
+    color: yellow;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Monda', sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 0 0 30px white, 0 0 10px yellow;
+    transition: opacity 0.5s;
+}
+
+li:nth-child(3) {
+    transform: rotate(15deg) translateY(4px);
+    animation: neon 2s infinite linear;
+}
+
+button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.off {
+    opacity: 0;
+}
+
+li.off {
+    opacity: 0;
+    animation: none;
+  }
+
+@keyframes neon {
+    0% {
+        opacity: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      20% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0.5;
+      }
+      30% {
+        opacity: 0.5
+      }
+      32% {
+        opacity: 1;
+      }
+      45% {
+        opacity: 1;
+      }
+      46% {
+        opacity: 0.5;
+      }
+      54% {
+        opacity: 0.5;
+      }
+      55% {
+        opacity: 1;
+      }
+      77% {
+        opacity: 1;
+      }
+      78% {
+        opacity: 0;
+      }
+      88% {
+        opacity: 0;
+      }
+      90% {
+        opacity: 1
+      }
+      93% {
+        opacity: 1
+      }
+      95% {
+        opacity: 0
+      }
+      97% {
+        opacity: 0
+      }
+      98% {
+        opacity: 1
+      }
+      100% {
+        opacity: 0;
+      }
+}
